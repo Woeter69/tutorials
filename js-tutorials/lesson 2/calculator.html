@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .main-grid {
+        display: grid;
+        grid-template-columns: 60px 60px 60px;
+        width: 280px;
+        column-gap: 50px;
+        row-gap: 40px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 2px solid black;
+        padding: 20px 20px;
+        border-radius: 40px;
+      }
+      .main-grid button {
+        width: 50px;
+        height: 30px;
+        border-radius: 300px;
+        border: none;
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-grid">
+      <button onclick="cal += '1'; console.log(cal)">1</button>
+      <button onclick="cal += '2'; console.log(cal)">2</button>
+      <button onclick="cal += '3'; console.log(cal)">3</button>
+      <button onclick="cal += '4'; console.log(cal)">4</button>
+      <button onclick="cal += '5'; console.log(cal)">5</button>
+      <button onclick="cal += '6'; console.log(cal)">6</button>
+      <button onclick="cal += '7'; console.log(cal)">7</button>
+      <button onclick="cal += '8'; console.log(cal)">8</button>
+      <button onclick="cal += '9'; console.log(cal)">9</button>
+      <button onclick="cal += '0'; console.log(cal)">0</button>
+      <button onclick="cal += '+'; console.log(cal)">+</button>
+      <button onclick="cal += '-'; console.log(cal)">-</button>
+      <button onclick="cal += '*'; console.log(cal)">*</button>
+      <button onclick="cal += '/'; console.log(cal)">/</button>
+      <button onclick="cal += '.'; console.log(cal)">.</button>
+      <button onclick="cal = eval(cal); console.log(cal)">=</button>
+    </div>
+  </body>
+  <script>let cal = ''</script>
+</html>
