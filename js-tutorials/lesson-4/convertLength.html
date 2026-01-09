@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Functions</title>
+  </head>
+  <body>
+    <script>
+      function kmToMiles(value) {
+        return value/1.6;
+      }
+      function milesToKm(value) {
+        return value*1.6;
+      }
+      function kmToFeet(value) {
+        return value * 3281;
+      }
+      function milestoFeet(value) {
+        return value * 5280;
+      }
+      function feetToKm(value) {
+        return value/3281;
+      }
+      function feetToMiles(value) {
+        return value/5280;
+      }
+
+      function convertLength(length, from, to) {
+        if (from == 'km') {
+          if (to == 'miles') {
+            console.log(kmToMiles(length));
+          }
+          else if (to == 'ft') {
+            console.log(kmToFeet(length));
+          }
+          else {
+            console.log(`Invalid unit ${to}`)
+          }
+        }
+        else if (from == 'miles') {
+          if (to == 'km') {
+            console.log(milesToKm(length));
+          }
+          else if (to == 'ft') {
+            console.log(milesToFeet(length));
+          }
+          else {
+            console.log(`Invalid unit ${to}`)
+          }
+        }
+        else if (from == "ft") {
+          if (to == 'km') {
+            console.log(feetToKm(length));
+          }
+          else if (to == 'miles') {
+            console.log(feetToMiles(length));
+          }
+        }
+        else {
+          console.log(`Invalid unit ${from}`);
+        }
+      }      
+    </script>
+  </body>
+</html>

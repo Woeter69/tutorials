@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Functions</title>
+  </head>
+  <body>
+    <script>
+      function convertToFahr(tempCel) {
+        fahr = (tempCel * 9/5) + 32;
+        return fahr;
+      }
+
+      function convertToCel(tempFahr) {
+        cel = (tempFahr -32) * 5/9;
+        return cel;
+      }
+
+      function convertTemp(degrees, unit) {
+        if (unit == 'F') {
+          console.log(convertToCel());
+        }
+        else {
+          console.log(convertToFahr());
+        }
+      }
+
+      convertTemp(45,'F');
+      convertTemp(67, 'C');
+      
+    </script>
+  </body>
+</html>

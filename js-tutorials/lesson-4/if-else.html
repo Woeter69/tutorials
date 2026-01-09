@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Variables</title>
+  </head>
+  <body>
+    <p>Cart Quantity</p>
+    <button onclick="update(0);">Show Quantity</button>
+    <button onclick="update(1)">Add to Cart</button>
+    
+    <button onclick="update(2)">+2</button>
+    <button onclick="update(-1)">Remove from Cart</button>
+    <button onclick="update(-2)">-2</button>
+    <button onclick="update(-(var1))">Reset Cart</button>
+  </body>
+  <script>
+    let var1 = 0;
+
+    function update(change) {
+      if (var1 + change > 10) {
+        console.log("Cart is full!")
+        return;
+      }
+      if (var1 + change < 0) {
+        alert('Not enough items in cart!');
+        return;
+      }
+      
+      var1 = var1 + change;
+      console.log(`Quantity: ${var1}`);
+  </script>
+</html>
