@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .main-flex {
+                margin: 50px 60px;
+                display: flex;
+                flex-direction: column;
+                border: 1px solid gray;
+                border-radius: 10px;
+                width: 350px;
+                height: 220px;
+                padding-top: 30px;
+                padding-left: 30px;
+                row-gap: 50px;
+            }
+            .top-flex {
+                display: flex;
+                flex-direction: row;
+                width: 300px;
+                justify-content: space-around;
+            }
+            .name-div {
+                font-family: Arial;
+                color: white;
+                font-weight: bold;
+                width: 500px;
+            }
+            .num-div {
+            background-color: rgb(55, 141, 240);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-family: Arial;
+            font-size: 14px;
+            font-weight: bold;
+            color: white;
+}
+
+
+        </style>
+    </head>
+    <body>
+        <div class="main-flex">
+            <div class="top-flex">
+                <div class="name-div">
+                    Home
+                </div>
+                <div class="num-div">
+                    99+
+                </div>
+            </div>
+
+            <div class="top-flex">
+                <div class="name-div">
+                    Notifications
+                </div>
+                <div class="num-div">
+                    3
+                </div>
+            </div>
+
+            <div class="top-flex">
+                <div class="name-div">
+                    Messages
+                </div>
+                <div class="num-div">
+                    7
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

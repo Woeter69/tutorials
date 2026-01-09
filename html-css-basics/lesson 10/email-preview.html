@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p {
+        font-family: Arial;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .main-flex {
+        width: 500px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-left: 50px;
+        margin-top: 100px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        border: 1px solid rgb(221, 221, 221);
+      } 
+      .pfp {
+        margin-top: 5px;
+        width: 50px;
+        height: 50px;
+        border-radius: 300px;
+      }
+      .top-flex {
+        display: flex;
+        max-width: 450px;
+        margin-top: 25px;
+        padding-left: 20px;
+        justify-content: space-between;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+      .top-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 30px;
+        margin-bottom: 5px;
+      }
+      .sender-info {
+        line-height: 24px;
+        max-width: 380px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+      }
+      .inbox {
+        color: rgb(150,150,150);
+        font-size: 12px;
+        margin-left: 15px;
+        margin-bottom: 10px;
+      }
+      .preview {
+        color: rgb(150,150,150);
+        font-size: 16px;   
+      }
+      .info {
+        font-size: 15px;
+        font-weight: 600;
+      }
+      .sender {
+        flex: 1;
+        font-weight: bold;
+        font-size: 18px;
+      }
+      .time {
+        margin-bottom: 10px;
+        font-size: 12px;
+        color: rgb(150,150,150);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-flex">
+      <p class="inbox">ALL INBOXES</p>
+      <div class="top-flex">
+        <img class="pfp" src="pexels-pixabay-57416.jpg">
+        <div class="content">
+          <div class="top-row">
+            <p class="sender">Skibidi Co.</p>
+            <p class="time">12:34 AM</p>
+          </div>
+          <div class="sender-info">
+          <p class="info">Brainrot</p>
+          <p class="preview">Spongbob...</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

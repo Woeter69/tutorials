@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p {
+        margin-left: 10px;
+        font-family: 'Segoe UI';
+        text-align: left;
+      }
+      .top-grid {
+        display: grid;
+        grid-template-columns: 40px 200px;
+        column-gap: 12px;
+        align-items: center;
+      }
+      .main-grid {
+        display: grid;
+        grid-template-columns: 200px 200px 400px;
+        column-gap: 20px;
+      }
+      .main-div {
+        vertical-align: top;
+        width: 200px;
+        height: 330px;
+        border: none;
+        box-shadow: 1px 1px 10px rgba(0,0,0,0.4);
+        vertical-align: top;
+      }
+      
+      .box {
+        border-radius: 1px;
+      }
+      .image {
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+      }
+      .add-friend {
+        margin-left: 10px;
+        padding: 10px 20px;
+        background-color: rgb(24,119,242);
+        color: white;
+        font-size: medium;
+        font-family: "Segoe UI";
+        font-weight: bold;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      .name {
+        font-weight: bold;
+      }
+      .pfp-div {
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+      }
+      .pfp {
+        width: 40px;
+        height: 40px;
+        border-radius: 300px;
+      }
+      .mutual-div {
+        vertical-align: top;
+      }
+      .button {
+        margin-top: 15px;
+        margin-left: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-grid">
+      <div class="main-div">
+        <div>
+          <img src="pexels-pixabay-57416.jpg" class="image">
+        </div>
+        <div>
+          <div><p class="name">Fronk</p></div>
+          <div class="top-grid">
+            <div class="pfp-div"><img src="pexels-pixabay-57416.jpg" class="pfp"></div>
+            <div class="mutual-div"><p class="mutual">2 mutual friends</p></div>
+          </div>
+          <div class="button"><button class="add-friend">Add Friend</button></div>     
+        </div>
+      </div>
+
+      <div class="main-div">
+        <div>
+          <img src="shark.jpg" class="image">
+        </div>
+        <div>
+          <div><p class="name">Skank</p></div>
+          <div class="top-grid">
+            <div class="pfp-div"><img src="shark.jpg" class="pfp"></div>
+            <div class="mutual-div"><p class="mutual">3 mutual friends</p></div>
+          </div>
+          <div class="button"><button class="add-friend">Add Friend</button></div>
+        </div>  
+      </div>
+
+      <div class="main-div">
+        <div>
+          <img src="shark-cat.jpeg" class="image">
+        </div>
+        <div>
+          <div><p class="name">Bonk</p></div>
+          <div class="top-grid">
+            <div class="pfp-div"><img src="shark-cat.jpeg" class="pfp"></div>
+            <div class="mutual-div"><p class="mutual">1 mutual friends</p></div> 
+          </div>
+          <div class="button"><button class="add-friend">Add Friend</button></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

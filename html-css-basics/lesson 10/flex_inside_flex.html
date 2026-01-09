@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .main-flex {
+        display: flex;
+      }
+      .top {
+        display: flex;
+        background-color: lightcoral;
+        width: 550px;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+      }
+      .top-new {
+        background-color: lightblue;
+        width: 750px;
+        height: 200px;
+      }
+      .nested-one {
+        color: white;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-flex">
+      <div class="top">
+        <div class="nested-one"> item 1</div>
+      </div>
+      <div class="top-new">flex 2</div>
+    </div>
+  </body>
+</html>

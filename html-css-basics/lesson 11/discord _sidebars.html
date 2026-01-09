@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p {
+        color: white;
+        font-family: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 300px;
+      }
+      .small-sidebar {
+        padding-top: 20px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 70px;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(27, 26, 26);
+        align-items: center;
+        row-gap: 20px;
+      }
+      .big-sidebar {
+        padding-left: 20px;
+        padding-right: 20px;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        bottom: 0;
+        left: 70px;
+        width: 180px;
+        background-color: rgb(46, 46, 46);
+        padding-top: 40px;
+      }
+
+      .top-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 0;
+        padding-bottom: 20px;
+      }
+      .info {
+        font-size: 14px;
+        font-weight: bold;
+      }
+      .plus {
+        color: rgb(177, 177, 177);
+        font-size: 24px;
+      }
+      .text {
+        margin-top: 10px;
+        font-size: 16px;
+        color: rgb(177, 177, 177);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="small-sidebar">
+      <img src="shark.jpg">
+      <img src="shark-cat.jpeg">
+      <img src="pexels-pixabay-57416.jpg">
+    </div>
+    <div class="big-sidebar">
+      <div class="top-row">
+        <p class="info">INFO</p>
+        <p class="plus">+</p>
+      </div>
+      <p class="text"># new-videos</p>
+      <p class="text"># updates</p>
+      <p class="text"># faq</p>
+    </div>
+  </body>
+</html>

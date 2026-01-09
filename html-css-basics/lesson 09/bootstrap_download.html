@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p {
+
+      }
+      .main {
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(94, 46, 167);
+        padding-left: 50px;
+        padding-right: 50px;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .home {
+        color: white;
+        font-weight: bold;
+      }
+      .input {
+        background-color: white;
+        border: none;
+        margin-left: 40px;
+        margin-top: 12px;
+        width: 800px;
+        border-radius: 50px;
+        flex:1;
+        max-width: 1000px;
+        height: 40px;
+        align-items: center;
+        vertical-align: middle;
+        text-align: left;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .input:focus {
+        border: none;
+        outline: none;
+      }
+      .download {
+        background-color: rgb(94, 46, 167);
+        color: white;
+        border: white solid 2px;
+        height: 40px;
+        width: 100px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <p class="home">Home</p>
+      <input class="input" placeholder="Search"></input>
+      <button class="download">Download</button>
+    </div>
+  </body>
+</html>
