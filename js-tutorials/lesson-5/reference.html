@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Objects</title>
+  </head>
+  <body>
+    <script>
+      const product = { // the variable does not store the actual object is just stores a reference to that object, the actual object is somewhere in the memory
+        name: 'bonk',
+        price: 3000
+      };
+
+      const new_product = product; // Copies the reference not the actual object
+      product.name = 'gng';
+      console.log(product.name); // Notice i can just change the object even if product is defined as const becuase the const is just the reference not the actual object
+      // Also if i log new_product the name will update because product and new_product points to the same object
+      console.log(new_product.name);
+
+      const new_new_product = {
+        name: 'gng',
+        price: 3000
+      };
+
+      console.log(product === new_new_product); // This will say false as reference are not same even though the object are exatly the same
+
+      const {price} = product; // Called destructuring basically if we wanna save an object value to a variable but the name or the object value and the variable is the same in our case price we just destructure it. its the same as const price = product.price
+
+      const new_new_new_object = {
+         price // We can shorthand the object value to just name if the object value name and variable name is the same, its the same as price: price
+      }
+      // We can also shorthand method making
+      const new_new_new_new_object = {
+        lmao: function() {
+          console.log("Sheesh");
+        }
+        damn() {
+          console.log("Sheesh");
+        }
+      } // Both define a method but the damn one is much simplar to write
+    </script>
+  </body>
+</html>
