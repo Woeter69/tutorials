@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Objects</title>
+  </head>
+  <body>
+    <script>
+      const product = { // btw we can put objects even functions as values
+        name: 'shirt',
+        ['delivery-time']: 'day 1', //btw the braces are optional
+        rating: {
+          stars: 4.5,
+          count: 87
+        },
+        fun: function test() {
+          console.log(product.name)
+        }
+      };
+      console.log(product.name);
+      console.log(product['name'])
+      //console.log(delivery-time) //tries to do math lmao js is stupid
+      console.log(['delivery-time']) //works because in square braces and quotes btw we can also use variable or a operation anything that gives a value
+      
+      console.log(product.rating.stars)
+      product.fun();
+      console.log(JSON.stringify(product));
+      jsonString = JSON.stringify(product);
+      newObj=JSON.parse(jsonString);
+      console.log(newObj);
+    </script>
+  </body>
+</html>
